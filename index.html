@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Newport Thames brings 30+ years of technology and leadership experience to hard problems.">
+  <title>Newport Thames</title>
+  <style>
+    :root{
+      --navy:#061d36;
+      --azure:#1687c9;
+      --baby:#b9ddf4;
+      --ice:#edf7fc;
+      --white:#fff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;background:var(--navy)}
+    body{color:var(--white);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    main{min-height:100svh;display:grid;place-items:center;padding:48px 24px;overflow:hidden;position:relative}
+    .watermark{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-55%);font-family:"Times New Roman",serif;font-size:clamp(17rem,45vw,42rem);line-height:.7;letter-spacing:-.17em;color:var(--baby);opacity:.075;user-select:none;pointer-events:none;white-space:nowrap}
+    .content{width:min(940px,100%);position:relative;text-align:center}
+    .rule{width:72px;height:2px;background:var(--azure);margin:0 auto 34px}
+    h1{margin:0;font-family:"Times New Roman",Georgia,serif;font-weight:400;font-size:clamp(2.5rem,7vw,5.4rem);line-height:.95;letter-spacing:.16em;text-transform:uppercase;color:var(--baby)}
+    .statement{max-width:780px;margin:42px auto 0;font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.45rem,3.1vw,2.45rem);line-height:1.35;font-weight:400}
+    .detail{max-width:650px;margin:30px auto 0;color:#d5e8f4;font-size:clamp(1rem,1.7vw,1.15rem);line-height:1.75}
+    .contact{display:inline-block;margin-top:42px;padding-bottom:7px;color:var(--baby);text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:.84rem;border-bottom:1px solid var(--azure)}
+    .contact:hover,.contact:focus{color:var(--white)}
+    footer{position:absolute;bottom:24px;left:24px;right:24px;text-align:center;color:#7fa7c0;font-size:.72rem;letter-spacing:.09em}
+    @media(max-width:560px){main{padding:40px 22px 72px}h1{letter-spacing:.10em}.statement{margin-top:34px}.detail{line-height:1.6}}
+  </style>
+</head>
+<body>
+  <main>
+    <div class="watermark" aria-hidden="true">NT</div>
+    <section class="content">
+      <div class="rule"></div>
+      <h1>Newport Thames</h1>
+      <p class="statement">30+ years of technology and leadership experience, applied to hard problems.</p>
+      <p class="detail">Newport Thames brings experience in technology, engineering, product and leadership to problems where judgment matters.</p>
+      <a class="contact" href="https://www.linkedin.com/in/raymondgilbert/" rel="me">Ray Gilbert on LinkedIn&nbsp; →</a>
+    </section>
+    <footer>© 2026 Newport-Thames LLC</footer>
+  </main>
+</body>
+</html>
