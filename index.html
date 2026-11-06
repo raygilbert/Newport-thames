@@ -29,7 +29,7 @@
     *{box-sizing:border-box}
     html,body{margin:0;min-height:100%;background:var(--navy)}
     body{color:var(--white);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-    .hero{min-height:max(640px,82svh);display:grid;place-items:center;padding:48px 24px;overflow:hidden;position:relative}
+    .hero{min-height:max(540px,68svh);display:grid;place-items:center;padding:40px 24px;overflow:hidden;position:relative}
     .watermark{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-55%);font-family:"Times New Roman",serif;font-size:clamp(17rem,45vw,42rem);line-height:.7;letter-spacing:-.17em;color:var(--baby);opacity:.075;user-select:none;pointer-events:none;white-space:nowrap}
     .content{width:min(940px,100%);position:relative;text-align:center}
     .rule{width:72px;height:2px;background:var(--azure);margin:0 auto 34px}
@@ -38,8 +38,7 @@
     .detail{max-width:650px;margin:30px auto 0;color:#d5e8f4;font-size:clamp(1rem,1.7vw,1.15rem);line-height:1.75}
     .contact{display:inline-block;margin-top:42px;padding-bottom:7px;color:var(--baby);text-decoration:none;text-transform:uppercase;letter-spacing:.16em;font-size:.84rem;border-bottom:1px solid var(--azure)}
     .contact:hover,.contact:focus{color:var(--white)}
-    .hero footer{position:absolute;bottom:24px;left:24px;right:24px;text-align:center;color:#7fa7c0;font-size:.72rem;letter-spacing:.09em}
-    .services{padding:106px 24px 118px;border-top:1px solid rgba(185,221,244,.2)}
+    .services{padding:80px 24px 64px;border-top:1px solid rgba(185,221,244,.2)}
     .services-inner{width:min(940px,100%);margin:0 auto}
     .eyebrow{margin:0 0 22px;color:var(--azure);font-size:.76rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
     h2{margin:0;color:var(--baby);font-family:"Times New Roman",Georgia,serif;font-size:clamp(2.4rem,5vw,4rem);font-weight:400;letter-spacing:.08em;line-height:1.1;text-transform:uppercase}
@@ -51,8 +50,9 @@
     .approach{margin-top:70px;padding-top:28px;border-top:1px solid rgba(185,221,244,.35)}
     .approach h2{margin-bottom:20px;font-size:clamp(1.75rem,3.5vw,2.55rem)}
     .approach p{max-width:760px}
-    @media(max-width:700px){.service-list{grid-template-columns:1fr;gap:32px}.services{padding:76px 24px 88px}.services-intro{margin-bottom:42px}.approach{margin-top:56px}}
-    @media(max-width:560px){.hero{min-height:max(600px,82svh);padding:40px 22px 72px}h1{letter-spacing:.10em}.statement{margin-top:34px}.detail{line-height:1.6}.services{padding-left:22px;padding-right:22px}}
+    .site-footer{padding:26px 24px 32px;border-top:1px solid rgba(185,221,244,.2);text-align:center;color:#7fa7c0;font-size:.72rem;letter-spacing:.09em}
+    @media(max-width:700px){.service-list{grid-template-columns:1fr;gap:32px}.services{padding:76px 24px 48px}.services-intro{margin-bottom:42px}.approach{margin-top:56px}}
+    @media(max-width:560px){.hero{min-height:max(500px,68svh);padding:32px 22px}h1{letter-spacing:.10em}.statement{margin-top:34px}.detail{line-height:1.6}.services{padding-left:22px;padding-right:22px}}
   </style>
 </head>
 <body>
@@ -66,7 +66,6 @@
         <p class="detail">Newport Thames brings experience in technology, engineering, product and leadership to problems where judgment matters.</p>
         <a class="contact" href="https://www.linkedin.com/in/raymondgilbert/" rel="me">Ray Gilbert on LinkedIn&nbsp; →</a>
       </div>
-      <footer>© 2026 Newport-Thames LLC</footer>
     </section>
     <section class="services" aria-labelledby="services-title">
       <div class="services-inner">
@@ -94,5 +93,6 @@
       </div>
     </section>
   </main>
+  <footer class="site-footer">© 2026 Newport-Thames LLC</footer>
 </body>
 </html>
