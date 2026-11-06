@@ -29,7 +29,7 @@
     *{box-sizing:border-box}
     html,body{margin:0;min-height:100%;background:var(--navy)}
     body{color:var(--white);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
-    .hero{min-height:100svh;display:grid;place-items:center;padding:48px 24px;overflow:hidden;position:relative}
+    .hero{min-height:max(640px,82svh);display:grid;place-items:center;padding:48px 24px;overflow:hidden;position:relative}
     .watermark{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-55%);font-family:"Times New Roman",serif;font-size:clamp(17rem,45vw,42rem);line-height:.7;letter-spacing:-.17em;color:var(--baby);opacity:.075;user-select:none;pointer-events:none;white-space:nowrap}
     .content{width:min(940px,100%);position:relative;text-align:center}
     .rule{width:72px;height:2px;background:var(--azure);margin:0 auto 34px}
@@ -52,7 +52,7 @@
     .approach h2{margin-bottom:20px;font-size:clamp(1.75rem,3.5vw,2.55rem)}
     .approach p{max-width:760px}
     @media(max-width:700px){.service-list{grid-template-columns:1fr;gap:32px}.services{padding:76px 24px 88px}.services-intro{margin-bottom:42px}.approach{margin-top:56px}}
-    @media(max-width:560px){.hero{padding:40px 22px 72px}h1{letter-spacing:.10em}.statement{margin-top:34px}.detail{line-height:1.6}.services{padding-left:22px;padding-right:22px}}
+    @media(max-width:560px){.hero{min-height:max(600px,82svh);padding:40px 22px 72px}h1{letter-spacing:.10em}.statement{margin-top:34px}.detail{line-height:1.6}.services{padding-left:22px;padding-right:22px}}
   </style>
 </head>
 <body>
